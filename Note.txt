@@ -1,0 +1,42 @@
+Pattern -> Makes microservices work well together
+Technologies -> Libraries and frameworks to solve common problems
+
+Prerequisite
+.Java
+.Spring Boot
+
+Microservices
+
+What we'll building
+A movie rating app, where users can rate the movies they've watched
+
+Movie Catalog Api application
+
+mymoviecatalog.com/api/alexander
+{
+	id: alexander
+	name: alexander
+	movies" [
+	{ id: 1234, name: movie_name, description: ajsjd, rating: 3},
+	{ id: 500, name: movie_name, description: edwffwf, rating: 5}
+	{ id: 222 name: movie_name, description: qqq, rating: 1}
+	]
+}
+		                Rating Data Service -> Input: User ID. Output: Movie IDs and ratings
+			            |
+			            v
+Movie Info Service ->  [ ] -> Movie Catalog Service
+	|				                |
+	v				                v
+Input: Movie ID			        Input: User ID
+Output: Movie details		    Output: Movie List With Details
+
+
+TODO
+
+.Create 3 Spring Boot projects
+.Build movie catalog service API
+.Build movie info service API
+.Build ratings data service API
+.Have movie catalog service call the other two services(the naive way)
+.Implement a better way (Service discovery)
