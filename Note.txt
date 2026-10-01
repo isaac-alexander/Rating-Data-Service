@@ -40,3 +40,9 @@ TODO
 .Build ratings data service API
 .Have movie catalog service call the other two services(the naive way)
 .Implement a better way (Service discovery)
+
+
+How to make a REST call from your code?
+.Calling REST APIs programmatically
+.Using a REST client library
+.Spring Boot comes with a client already in your classpath- RestTemplate
